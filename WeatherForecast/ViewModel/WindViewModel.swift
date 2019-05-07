@@ -20,5 +20,36 @@ struct WindViewModel {
 
     init(currentWeather: CurrentWeather) {
         self.currentWeather = currentWeather
+        updateProperties()
+    }
+
+    // mutating function enables changing struct properties
+    private mutating func updateProperties() {
+        coordString = setCoordString(currentWeather: currentWeather)
+        windSpeedString = setWindSpeedString(currentWeather: currentWeather)
+        windDegString = setWindDirectionString(currentWeather: currentWeather)
+        locationString = setLocationString(currentWeather: currentWeather)
+    }
+
+}
+
+extension WindViewModel {
+
+    // separate set functions for each property
+
+    private func setCoordString(currentWeather: CurrentWeather) -> String {
+        return "Lat: \(currentWeather.coord.lat), Lon: \(currentWeather.coord.lon)"
+    }
+
+    private func setWindSpeedString(currentWeather: CurrentWeather) -> String {
+        return "Wind Speed: \(currentWeather.wind.speed)"
+    }
+
+    private func setWindDirectionString(currentWeather: CurrentWeather) -> String {
+        return "Wind Deg: \(currentWeather.wind.deg)"
+    }
+
+    private func setLocationString(currentWeather: CurrentWeather) -> String {
+        return "Location: \(currentWeather.name)"
     }
 }
