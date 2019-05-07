@@ -50,6 +50,10 @@ extension ViewController {
                 return
             }
             guard let weather = weather  else { return }
+
+            // set searchResult, which can use didSet to update the view model.
+            self.searchResult = weather
+
             print("Current Weather Object:")
             print(weather)
         }
