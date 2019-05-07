@@ -10,6 +10,12 @@ import Foundation
 
 struct WindViewModel {
 
+    // private set ==> only WindViewModel can set property. get is public.
+    private(set) var coordString = ""
+    private(set) var windSpeedString = ""
+    private(set) var windDegString = ""
+    private(set) var locationString = ""
+
     let currentWeather: CurrentWeather
 
     init(currentWeather: CurrentWeather) {
