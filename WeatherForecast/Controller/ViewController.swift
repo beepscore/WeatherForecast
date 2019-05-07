@@ -66,4 +66,12 @@ extension ViewController {
         }
     }
 
+    private func updateLabels() {
+        guard let windViewModel = windViewModel else { return }
+        locationLabel.text = windViewModel.locationString
+        windSpeedLabel.text = windViewModel.windSpeedString
+        windDirectionLabel.text = windViewModel.windDegString
+        coordLabel.text = windViewModel.coordString
+    }
+
 }
