@@ -113,6 +113,7 @@
 		DED54C6B228113EC00D65743 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FC1C27822080EB4E0049EDB8 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -149,7 +150,6 @@
 				FC1C27AE2080EBBD0049EDB8 /* StubData */,
 				DED54C6A2281138D00D65743 /* ViewModel */,
 				FC1C27802080EB4E0049EDB8 /* AppDelegate.swift */,
-				FC1C27822080EB4E0049EDB8 /* ViewController.swift */,
 				FC1C27842080EB4E0049EDB8 /* Main.storyboard */,
 				FC1C27872080EB4E0049EDB8 /* Assets.xcassets */,
 				FC1C27892080EB4E0049EDB8 /* LaunchScreen.storyboard */,
