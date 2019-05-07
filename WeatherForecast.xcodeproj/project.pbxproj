@@ -130,6 +130,7 @@
 		DED54C6E228123DE00D65743 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FC1C27842080EB4E0049EDB8 /* Main.storyboard */,
 				DED54C75228132D500D65743 /* NibLoadable.swift */,
 				DED54C7322812A6300D65743 /* WindView.swift */,
 				DED54C7122812A3200D65743 /* WindView.xib */,
@@ -170,7 +171,6 @@
 				DED54C6E228123DE00D65743 /* View */,
 				DED54C6A2281138D00D65743 /* ViewModel */,
 				FC1C27802080EB4E0049EDB8 /* AppDelegate.swift */,
-				FC1C27842080EB4E0049EDB8 /* Main.storyboard */,
 				FC1C27872080EB4E0049EDB8 /* Assets.xcassets */,
 				FC1C27892080EB4E0049EDB8 /* LaunchScreen.storyboard */,
 				FC1C278C2080EB4E0049EDB8 /* Info.plist */,
