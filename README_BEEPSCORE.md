@@ -29,6 +29,11 @@ Several authors have different opinions of what belongs in a ViewModel.
 I like the idea of keeping the ViewModel extremely simple, as advocated by Matteo Manferdini
 https://matteomanferdini.com/mvvm-pattern-ios-swift/
 
+## ViewModel
+A ViewModel sits between a View and a Model.
+A ViewModel parses a Model to prepare information for a View.
+The View and the Model shouldn't know about each other.
+
 ## nib
 In an MVC app, instead of using a nib it's probably simpler to use a parent storyboard with a container view,
 and a separate view controller and storyboard.
