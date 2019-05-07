@@ -103,6 +103,13 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		DED54C6A2281138D00D65743 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FC1C27742080EB4E0049EDB8 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +139,7 @@
 				5122266520931FE10022178E /* API */,
 				FC1C27B12080F19A0049EDB8 /* Model */,
 				FC1C27AE2080EBBD0049EDB8 /* StubData */,
+				DED54C6A2281138D00D65743 /* ViewModel */,
 				FC1C27802080EB4E0049EDB8 /* AppDelegate.swift */,
 				FC1C27822080EB4E0049EDB8 /* ViewController.swift */,
 				FC1C27842080EB4E0049EDB8 /* Main.storyboard */,
