@@ -110,6 +110,13 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		DED54C6B228113EC00D65743 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		FC1C27742080EB4E0049EDB8 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				5122266520931FE10022178E /* API */,
+				DED54C6B228113EC00D65743 /* Controller */,
 				FC1C27B12080F19A0049EDB8 /* Model */,
 				FC1C27AE2080EBBD0049EDB8 /* StubData */,
 				DED54C6A2281138D00D65743 /* ViewModel */,
