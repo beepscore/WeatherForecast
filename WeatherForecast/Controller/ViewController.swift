@@ -20,10 +20,10 @@ class ViewController: UIViewController {
         didSet {
             guard let searchResult = searchResult else { return }
 
-            windViewModel = WindViewModel.init(currentWeather: searchResult)
+            let windViewModel = WindViewModel(currentWeather: searchResult)
             DispatchQueue.main.async {
                 // update UI on main queue
-                //self.updateLabels()
+                self.windView.windViewModel = windViewModel
             }
         }
     }
@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        windView.windViewModel = WindViewModel()
     }
 
     override func didReceiveMemoryWarning() {
