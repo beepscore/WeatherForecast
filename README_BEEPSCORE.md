@@ -19,8 +19,17 @@ Used to simplify ViewModel.
 ## git repo
 https://github.com/matteom/FlightInfo/tree/master/FlightInfo
 
+## Controlling Complexity in Swift
+https://academy.realm.io/posts/andy-matuschak-controlling-complexity/
+
 # Results
 
+## MVVM in iOS
+Several authors have different opinions of what belongs in a ViewModel.
+I like the idea of keeping the ViewModel extremely simple, as advocated by Matteo Manferdini
+https://matteomanferdini.com/mvvm-pattern-ios-swift/
+
+## nib
 In an MVC app, instead of using a nib it's probably simpler to use a parent storyboard with a container view,
 and a separate view controller and storyboard.
 However this app uses MVVM, and we want a View that gets info from a ViewModel instead of a ViewController. So we use WindView.swift and WindView.xib.
