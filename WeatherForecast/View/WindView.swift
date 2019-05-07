@@ -12,10 +12,10 @@ import UIKit
 
     // WindView encapsulates its subviews
     // https://matteomanferdini.com/mvvm-pattern-ios-swift/
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var windSpeedLabel: UILabel!
-    @IBOutlet weak var windDirectionLabel: UILabel!
-    @IBOutlet weak var coordLabel: UILabel!
+    @IBOutlet private weak var locationLabel: UILabel!
+    @IBOutlet private weak var windSpeedLabel: UILabel!
+    @IBOutlet private weak var windDirectionLabel: UILabel!
+    @IBOutlet private weak var coordLabel: UILabel!
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
