@@ -12,15 +12,6 @@ class ViewController: UIViewController {
 
     private let apiManager = APIManager()
 
-    private(set) var windViewModel: WindViewModel?
-
-    // IBOutlets
-    // other authors suggest encapsulate these view properties within a custom view
-    // https://matteomanferdini.com/mvvm-pattern-ios-swift/
-//    @IBOutlet weak var locationLabel: UILabel!
-//    @IBOutlet weak var windSpeedLabel: UILabel!
-//    @IBOutlet weak var windDirectionLabel: UILabel!
-//    @IBOutlet weak var coordLabel: UILabel!
     @IBOutlet weak var windView: WindView!
 
     /// if getWeather sets property searchResult to a non-nil value,
@@ -72,12 +63,6 @@ extension ViewController {
         }
     }
 
-//    private func updateLabels() {
-//        guard let windViewModel = windViewModel else { return }
-//        locationLabel.text = windViewModel.locationString
-//        windSpeedLabel.text = windViewModel.windSpeedString
-//        windDirectionLabel.text = windViewModel.windDegString
-//        coordLabel.text = windViewModel.coordString
-//    }
+
 
 }

@@ -28,6 +28,15 @@ import UIKit
         setupFromNib()
     }
 
+    var windViewModel: WindViewModel = WindViewModel() {
+        didSet {
+            locationLabel.text = windViewModel.locationString
+            windSpeedLabel.text = windViewModel.windSpeedString
+            windDirectionLabel.text = windViewModel.windDegString
+            coordLabel.text = windViewModel.coordString
+        }
+    }
+
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
