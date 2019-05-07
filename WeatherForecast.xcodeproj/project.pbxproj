@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5122266720931FF80022178E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5122266620931FF80022178E /* APIManager.swift */; };
 		DED54C6D228114F700D65743 /* WindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED54C6C228114F700D65743 /* WindViewModel.swift */; };
+		DED54C7222812A3300D65743 /* WindView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DED54C7122812A3200D65743 /* WindView.xib */; };
+		DED54C7422812A6300D65743 /* WindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED54C7322812A6300D65743 /* WindView.swift */; };
+		DED54C76228132D500D65743 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED54C75228132D500D65743 /* NibLoadable.swift */; };
 		FC1C27812080EB4E0049EDB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C27802080EB4E0049EDB8 /* AppDelegate.swift */; };
 		FC1C27832080EB4E0049EDB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C27822080EB4E0049EDB8 /* ViewController.swift */; };
 		FC1C27862080EB4E0049EDB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1C27842080EB4E0049EDB8 /* Main.storyboard */; };
@@ -49,6 +52,9 @@
 		DED54C68228104E400D65743 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DED54C692281057B00D65743 /* README_BEEPSCORE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_BEEPSCORE.md; sourceTree = "<group>"; };
 		DED54C6C228114F700D65743 /* WindViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindViewModel.swift; sourceTree = "<group>"; };
+		DED54C7122812A3200D65743 /* WindView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WindView.xib; sourceTree = "<group>"; };
+		DED54C7322812A6300D65743 /* WindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindView.swift; sourceTree = "<group>"; };
+		DED54C75228132D500D65743 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		FC1C277D2080EB4E0049EDB8 /* WeatherForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1C27802080EB4E0049EDB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC1C27822080EB4E0049EDB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +127,16 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DED54C6E228123DE00D65743 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DED54C75228132D500D65743 /* NibLoadable.swift */,
+				DED54C7322812A6300D65743 /* WindView.swift */,
+				DED54C7122812A3200D65743 /* WindView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FC1C27742080EB4E0049EDB8 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +167,7 @@
 				DED54C6B228113EC00D65743 /* Controller */,
 				FC1C27B12080F19A0049EDB8 /* Model */,
 				FC1C27AE2080EBBD0049EDB8 /* StubData */,
+				DED54C6E228123DE00D65743 /* View */,
 				DED54C6A2281138D00D65743 /* ViewModel */,
 				FC1C27802080EB4E0049EDB8 /* AppDelegate.swift */,
 				FC1C27842080EB4E0049EDB8 /* Main.storyboard */,
@@ -312,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC1C27B02080EC520049EDB8 /* londonWeather.json in Resources */,
+				DED54C7222812A3300D65743 /* WindView.xib in Resources */,
 				FC1C278B2080EB4E0049EDB8 /* LaunchScreen.storyboard in Resources */,
 				FC1C27882080EB4E0049EDB8 /* Assets.xcassets in Resources */,
 				FC1C27862080EB4E0049EDB8 /* Main.storyboard in Resources */,
@@ -345,10 +363,12 @@
 				5122266720931FF80022178E /* APIManager.swift in Sources */,
 				FC1C27832080EB4E0049EDB8 /* ViewController.swift in Sources */,
 				FC1C27BB2080F4180049EDB8 /* Wind.swift in Sources */,
+				DED54C7422812A6300D65743 /* WindView.swift in Sources */,
 				FC1C27B52080F1CF0049EDB8 /* Coord.swift in Sources */,
 				FC1C27B32080F1AD0049EDB8 /* CurrentWeather.swift in Sources */,
 				FC1C27B72080F2BE0049EDB8 /* WeatherDetails.swift in Sources */,
 				FC1C27812080EB4E0049EDB8 /* AppDelegate.swift in Sources */,
+				DED54C76228132D500D65743 /* NibLoadable.swift in Sources */,
 				FC1C27BF2080F5360049EDB8 /* Sys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

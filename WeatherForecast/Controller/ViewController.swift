@@ -17,10 +17,11 @@ class ViewController: UIViewController {
     // IBOutlets
     // other authors suggest encapsulate these view properties within a custom view
     // https://matteomanferdini.com/mvvm-pattern-ios-swift/
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var windSpeedLabel: UILabel!
-    @IBOutlet weak var windDirectionLabel: UILabel!
-    @IBOutlet weak var coordLabel: UILabel!
+//    @IBOutlet weak var locationLabel: UILabel!
+//    @IBOutlet weak var windSpeedLabel: UILabel!
+//    @IBOutlet weak var windDirectionLabel: UILabel!
+//    @IBOutlet weak var coordLabel: UILabel!
+    @IBOutlet weak var windView: WindView!
 
     /// if getWeather sets property searchResult to a non-nil value,
     /// set property windViewModel to a new WindViewModel using searchResult
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
             windViewModel = WindViewModel.init(currentWeather: searchResult)
             DispatchQueue.main.async {
                 // update UI on main queue
-                self.updateLabels()
+                //self.updateLabels()
             }
         }
     }
@@ -71,12 +72,12 @@ extension ViewController {
         }
     }
 
-    private func updateLabels() {
-        guard let windViewModel = windViewModel else { return }
-        locationLabel.text = windViewModel.locationString
-        windSpeedLabel.text = windViewModel.windSpeedString
-        windDirectionLabel.text = windViewModel.windDegString
-        coordLabel.text = windViewModel.coordString
-    }
+//    private func updateLabels() {
+//        guard let windViewModel = windViewModel else { return }
+//        locationLabel.text = windViewModel.locationString
+//        windSpeedLabel.text = windViewModel.windSpeedString
+//        windDirectionLabel.text = windViewModel.windDegString
+//        coordLabel.text = windViewModel.coordString
+//    }
 
 }
