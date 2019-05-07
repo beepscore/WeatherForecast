@@ -69,6 +69,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="coordLabel" destination="PTi-82-udl" id="QmM-Vm-hdS"/>
+                        <outlet property="locationLabel" destination="RkX-lJ-hT5" id="9w5-td-2Cz"/>
+                        <outlet property="windDirectionLabel" destination="Piu-sX-3wP" id="vV2-5n-4ol"/>
+                        <outlet property="windSpeedLabel" destination="9oT-t2-310" id="CHj-db-BbZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

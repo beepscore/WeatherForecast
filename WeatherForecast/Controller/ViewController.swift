@@ -14,6 +14,13 @@ class ViewController: UIViewController {
 
     private(set) var windViewModel: WindViewModel?
 
+    // IBOutlets
+    // other authors suggest encapsulate these view properties within a custom view
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var windSpeedLabel: UILabel!
+    @IBOutlet weak var windDirectionLabel: UILabel!
+    @IBOutlet weak var coordLabel: UILabel!
+
     /// if getWeather sets property searchResult to a non-nil value,
     /// set property windViewModel to a new WindViewModel using searchResult
     var searchResult: CurrentWeather? {
