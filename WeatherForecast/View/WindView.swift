@@ -19,6 +19,7 @@ import UIKit
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        // call setupFromNib, available by conforming to NibLoadable protocol
         setupFromNib()
     }
 

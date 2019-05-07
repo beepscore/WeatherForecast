@@ -27,6 +27,7 @@ public extension NibLoadable where Self: UIView {
         return UINib(nibName: Self.nibName, bundle: bundle)
     }
 
+    /// setupFromNib is availabel to any struct or class that conforms to NibLoadable protocol
     func setupFromNib() {
         guard let view = Self.nib.instantiate(withOwner: self, options: nil).first as? UIView else { fatalError("Error loading \(self) from nib") }
         addSubview(view)
