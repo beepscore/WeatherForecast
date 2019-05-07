@@ -26,6 +26,8 @@ struct WindViewModel {
     }
 
     /// - Parameter currentWeather: a MVVM Model object
+    /// The ViewModel initializer parses the Model object into strings directly ready for use in View.
+    /// In MVVM pattern this simplifies iOS ViewControllers
     init(currentWeather: CurrentWeather) {
         coordString = "Lat: \(currentWeather.coord.lat), Lon: \(currentWeather.coord.lon)"
         windSpeedString = "Wind Speed: \(currentWeather.wind.speed) m/s"
