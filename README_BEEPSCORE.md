@@ -8,5 +8,7 @@ https://blog.pusher.com/mvvm-ios/
 https://github.com/cjbatin/Swift4-Decoding-JSON-Using-Codable
 
 ## The MVVM Pattern for iOS Apps in Swift: a Pragmatic Approach
-// https://matteomanferdini.com/mvvm-pattern-ios-swift/
+https://matteomanferdini.com/mvvm-pattern-ios-swift/
 
+## git repo
+https://github.com/matteom/FlightInfo/tree/master/FlightInfo
