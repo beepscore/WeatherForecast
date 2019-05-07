@@ -28,6 +28,10 @@ class ViewController: UIViewController {
             guard let searchResult = searchResult else { return }
 
             windViewModel = WindViewModel.init(currentWeather: searchResult)
+            DispatchQueue.main.async {
+                // update UI on main queue
+                self.updateLabels()
+            }
         }
     }
 
