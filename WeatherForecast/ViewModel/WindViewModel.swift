@@ -42,7 +42,7 @@ extension WindViewModel {
     }
 
     private func setWindSpeedString(currentWeather: CurrentWeather) -> String {
-        return "Wind Speed: \(currentWeather.wind.speed)"
+        return "Wind Speed: \(currentWeather.wind.speed) m/s"
     }
 
     private func setWindDirectionString(currentWeather: CurrentWeather) -> String {
