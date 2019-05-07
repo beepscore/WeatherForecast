@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 
     // IBOutlets
     // other authors suggest encapsulate these view properties within a custom view
+    // https://matteomanferdini.com/mvvm-pattern-ios-swift/
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var windSpeedLabel: UILabel!
     @IBOutlet weak var windDirectionLabel: UILabel!
