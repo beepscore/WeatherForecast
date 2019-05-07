@@ -16,6 +16,9 @@ class APIManager {
             guard let data = data, error == nil else {
                 print("Failed to get data")
                 return completion(nil, error)
+                // completion returns void, so instead could write
+                // completion(nil, error)
+                // return
             }
             self.createWeatherObjectWith(json: data, completion: { (weather, error) in
                 if let error = error {
