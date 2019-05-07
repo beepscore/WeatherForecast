@@ -30,7 +30,7 @@ import UIKit
 
     /// windViewModel is a MVVM ViewModel
     /// whenever property windView.windViewModel is set, windView updates its views
-    var windViewModel: WindViewModel = WindViewModel() {
+    var windViewModel = WindViewModel() {
         didSet {
             locationLabel.text = windViewModel.locationString
             windSpeedLabel.text = windViewModel.windSpeedString
