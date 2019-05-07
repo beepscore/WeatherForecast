@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var windView: WindView!
 
     /// if getWeather sets property searchResult to a non-nil value,
-    /// set property windViewModel to a new WindViewModel using searchResult
+    /// set windView.windViewModel.
+    /// Then windView will automatically update its views.
     var searchResult: CurrentWeather? {
         didSet {
             guard let searchResult = searchResult else { return }
