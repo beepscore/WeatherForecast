@@ -46,6 +46,7 @@
 		5122266620931FF80022178E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		DED54C67228104DA00D65743 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DED54C68228104E400D65743 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DED54C692281057B00D65743 /* README_BEEPSCORE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_BEEPSCORE.md; sourceTree = "<group>"; };
 		FC1C277D2080EB4E0049EDB8 /* WeatherForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1C27802080EB4E0049EDB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC1C27822080EB4E0049EDB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 			children = (
 				DED54C67228104DA00D65743 /* LICENSE */,
 				DED54C68228104E400D65743 /* README.md */,
+				DED54C692281057B00D65743 /* README_BEEPSCORE.md */,
 				FC1C277F2080EB4E0049EDB8 /* WeatherForecast */,
 				FC1C27942080EB4E0049EDB8 /* WeatherForecastTests */,
 				FC1C279F2080EB4E0049EDB8 /* WeatherForecastUITests */,
