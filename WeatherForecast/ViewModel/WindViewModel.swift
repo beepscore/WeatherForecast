@@ -10,46 +10,24 @@ import Foundation
 
 struct WindViewModel {
 
-    // private set ==> only WindViewModel can set property. get is public.
-    private(set) var coordString = ""
-    private(set) var windSpeedString = ""
-    private(set) var windDegString = ""
-    private(set) var locationString = ""
+    let coordString: String
+    let windSpeedString: String
+    let windDegString: String
+    let locationString: String
 
-    let currentWeather: CurrentWeather
+    init() {
+        coordString = "Lat: -, Lon: -"
+        windSpeedString = "Wind Speed: - m/s"
+        windDegString = "Wind Deg: -"
+        locationString = "Location: -"
+    }
 
     init(currentWeather: CurrentWeather) {
-        self.currentWeather = currentWeather
-        updateProperties()
-    }
-
-    // mutating function enables changing struct properties
-    private mutating func updateProperties() {
-        coordString = setCoordString(currentWeather: currentWeather)
-        windSpeedString = setWindSpeedString(currentWeather: currentWeather)
-        windDegString = setWindDirectionString(currentWeather: currentWeather)
-        locationString = setLocationString(currentWeather: currentWeather)
+        coordString = "Lat: \(currentWeather.coord.lat), Lon: \(currentWeather.coord.lon)"
+        windSpeedString = "Wind Speed: \(currentWeather.wind.speed) m/s"
+        windDegString = "Wind Deg: \(currentWeather.wind.deg)"
+        locationString = "Location: \(currentWeather.name)"
     }
 
 }
 
-extension WindViewModel {
-
-    // separate set functions for each property
-
-    private func setCoordString(currentWeather: CurrentWeather) -> String {
-        return "Lat: \(currentWeather.coord.lat), Lon: \(currentWeather.coord.lon)"
-    }
-
-    private func setWindSpeedString(currentWeather: CurrentWeather) -> String {
-        return "Wind Speed: \(currentWeather.wind.speed) m/s"
-    }
-
-    private func setWindDirectionString(currentWeather: CurrentWeather) -> String {
-        return "Wind Deg: \(currentWeather.wind.deg)"
-    }
-
-    private func setLocationString(currentWeather: CurrentWeather) -> String {
-        return "Location: \(currentWeather.name)"
-    }
-}
