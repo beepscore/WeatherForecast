@@ -10,8 +10,7 @@ import UIKit
 
 @IBDesignable class WindView: UIView, NibLoadable {
 
-    // IBOutlets
-    // encapsulate these view properties within custom view WindView
+    // WindView encapsulates its subviews
     // https://matteomanferdini.com/mvvm-pattern-ios-swift/
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var windSpeedLabel: UILabel!
@@ -28,6 +27,8 @@ import UIKit
         setupFromNib()
     }
 
+    /// windViewModel is a MVVM ViewModel
+    /// whenever property windViewModel is set, didSet updates windView labels text
     var windViewModel: WindViewModel = WindViewModel() {
         didSet {
             locationLabel.text = windViewModel.locationString

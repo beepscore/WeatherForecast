@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+/// NibLoadable adds methods to support loading a view from a nib
 /// https://stackoverflow.com/questions/9282365/load-view-from-an-external-xib-file-in-storyboard
 public protocol NibLoadable {
     static var nibName: String { get }
@@ -16,7 +18,8 @@ public protocol NibLoadable {
 public extension NibLoadable where Self: UIView {
 
     static var nibName: String {
-        return String(describing: Self.self) // defaults to the name of the class implementing this protocol.
+        // defaults to the name of the class implementing this protocol.
+        return String(describing: Self.self)
     }
 
     static var nib: UINib {

@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// WindViewModel is a MVVM ViewModel.
+/// WindViewModel properties contain strings ready for use in WindView
 struct WindViewModel {
 
     let coordString: String
@@ -15,6 +17,7 @@ struct WindViewModel {
     let windDegString: String
     let locationString: String
 
+    /// initializer without parameters may be used when currentWeather is unknown or nil
     init() {
         coordString = "Lat: -, Lon: -"
         windSpeedString = "Wind Speed: - m/s"
@@ -22,6 +25,7 @@ struct WindViewModel {
         locationString = "Location: -"
     }
 
+    /// - Parameter currentWeather: a MVVM Model object
     init(currentWeather: CurrentWeather) {
         coordString = "Lat: \(currentWeather.coord.lat), Lon: \(currentWeather.coord.lon)"
         windSpeedString = "Wind Speed: \(currentWeather.wind.speed) m/s"
